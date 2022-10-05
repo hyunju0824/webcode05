@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pages{
+            width: 100%;
+            background-color: #ededed;
+            border: 2px double black;
+            /* margin=0 오토 */
+        }
+        .header{
+            border: 1px dotted black;
+            padding: 20px;
+            
+            background-color: lightskyblue;
+            text-align: center;
+        }
+        .columns{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .column {
+            float: left;
+            height: 400px;
+        }
+         .left, .right{
+         width: 25%;
+         background-color: pink;
+        }
+        .center{
+            width: 50%;
+            background-color: white;
+        }
+        .footer {
+            clear: both;
+            border: 1px dotted black;
+            padding: 20px;
+            width: 100%;
+            
+            background-color: lightskyblue;
+        }
+        .footer p{
+            text-align: center;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="pages">
+
+        <div class="header">
+            <h1>3단레이아웃</h1>
+        </div>
+
+        <div class="columns">
+
+            <div class="column left">
+            <!--300px-->
+            <ul class="menu">
+            <li>소개</li>
+            <li>인사말</li>
+            <li>오시는길</li>
+            </ul>
+            </div>
+
+            <div class="column center">
+                <!-- 600px; -->
+                <h1>타이틀</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatum reprehenderit quae optio fugiat molestias quasi numquam voluptatibus nulla quod, maxime deserunt blanditiis autem corporis doloribus velit. Corporis, iure minima!</p>
+            </div>
+
+            <div class="column right">
+                <!--300px-->
+                <ul class="link">
+                <li>네이버</li>
+                <li>카카오</li>
+                <li>라이코스</li>
+                </ul>
+            </div>
+</div>
+    <div class="footer">
+        <p>하단영역주소</p>
+    </div>
+
+</div>
+</body>
+</html>
