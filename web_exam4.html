@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-과제4-자동차전시회</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<style>
+    @font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    body{
+        background-color: #ededed;
+        width: 100%;
+        margin: 0;
+    }
+    .header p{ /*자동차전시회입니다*/
+        text-align: center;
+        border-top: 2px solid #114891;
+        border-bottom: 1px solid #114891;
+        padding: 7px 0px;
+        font-family: 'Pretendard-Regular';
+        margin: 20px 50px;
+        
+        
+
+    }
+    .wrapper{
+        width: 960px;
+        margin: 0 auto;
+    }
+    img{
+        width: 200px;
+    }
+    #oh{
+        height: 141.250px;
+    }
+    .lologo{
+        width: 70%;
+        
+    }
+    .logo{
+        text-align: center;
+        background-color: white;
+        
+    }
+    .car{
+            width: 270px;
+            height: 270px;
+            float: left;
+            margin: 4px;
+            background-color: white; /*액자모양처럼*/
+            /*2번 배경이미지 바닥*/
+            /*box-shadow: ;   <-얘로도 가능!*/
+    }
+    .car img{
+        opacity: 0.5;
+    }
+    .car img:hover{
+            opacity: 1;
+            cursor:pointer;
+    }
+    .footer{
+        clear: both;
+        text-align: center;
+        margin: 600px 0px;
+        font-family: 'Pretendard-Regular';
+    }
+    .car h2{ /*차이름*/
+        font-size: 15px;
+        margin-bottom: 50px;
+        font-family: 'GongGothicMedium';
+
+
+    }
+    .wrapper2{
+        padding-left: 45px;
+    }
+    .car i{ 
+        color: crimson;
+    }
+    .four{ /*별점*/
+        color: crimson;
+        font-weight: bold;
+    }
+    #redcar, #oh{
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+        <div class="wrapper">
+        <div class="header">
+            <div class="logo"><img class="lologo" src="images/자동차목록로고.jpg" alt=""></div>
+            <p>2021 자동차 전시회입니다</p>
+        </div>
+
+        <div class="wrapper2">
+        <div class="car">
+            <figure>
+            <figcaption><h2>포르쉐 카이앤</h2></figcaption>
+            <img src="images/자동차목록빨간차.jpg" id="redcar" alt="">
+            <figcaption><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span class="four">4.5</span></figcaption>
+            </figure>
+        </div>
+        <div class="car">
+            <figure>
+            <figcaption><h2>포르쉐 911</h2></figcaption>
+            <img src="images/자동차목록곤색.jpg" id="oh" alt="">
+            <figcaption><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span class="four">4.5</span></figcaption>
+            </figure>
+        </div>
+        <div class="car">
+            <figure>
+            <figcaption><h2>현대 LF 쏘나타 하이브리드</h2></figcaption>
+            <img src="images/자동차목록회색.jpg" alt="">
+            <figcaption><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span class="four">4.5</span></figcaption>
+            </figure>
+        </div>
+        <div class="car">
+            <figure>
+            <figcaption><h2>기아 K8</h2></figcaption>
+            <img src="images/자동차목록퍼렁.jpg" alt="">
+            <figcaption><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span class="four">4.5</span></figcaption>
+            </figure>
+        </div>
+        <div class="car">
+            <figure>
+            <figcaption><h2>현대 더 뉴 싼타페</h2></figcaption>
+            <img src="images/자동차목록파랑.jpg" alt="">
+            <figcaption><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span class="four">4.5</span></figcaption>
+            </figure>
+        </div>
+        <div class="car">
+            <figure>
+            <figcaption><h2>아우디 A5</h2></figcaption>
+            <img src="images/자동차목록suv.jpg" alt="">
+            <figcaption><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span class="four">4.5</span></figcaption>
+            </figure>
+        </div>
+    </div>
+
+        <div class="footer">
+            <p>&copy;2021 CAR EXPO.</p>
+        </div> 
+
+        </div>
+</body>
+</html>
